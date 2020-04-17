@@ -9,14 +9,11 @@ public class CheckPrimeNumber {
 
         for (int index = 2; index < number; index++) {
             if (number % index == 0) {
-                System.out.println(number + " - " + "составное число");
                 prime = false;
+                break;
             }
-            else {
-                System.out.println(number + " - " + "простое число");
-            }
-            break;
-        }
+                  }
+
         return prime;
     }
         public static void main (String[] args) {
