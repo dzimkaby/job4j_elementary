@@ -1,11 +1,24 @@
 package ru.job4j;
 
+/**
+ * Данный класс служит для перевода денег из одной валюты в другую
+ *  @author Dmitry Mikhailov
+ */
 public class Converter {
+    /**
+     * Метод для перевода рулей в евро
+     * @param value - сумма в рублях
+     * @return rsl - сумма в евро
+     */
     public static int rubleToEuro(int value) {
         int rsl = value / 70;
         return rsl;
     }
-
+    /**
+     * Метод для перевода рулей в долларах
+     * @param value - сумма в рублях
+     * @return rsl - сумма в долларах
+     */
     public static int rubleToDollar(int value) {
         int rsl = value / 60;
         return rsl;
