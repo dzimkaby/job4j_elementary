@@ -37,4 +37,19 @@ public class MatrixCheck {
         }
         return rsl;
     }
+
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        for (int index = 0; index < 5; index++) {
+            boolean result1 = MatrixCheck.monoHorizontal(board, index);
+            boolean result2 = MatrixCheck.monoVertical(board, index);
+            if (result1 || result2) {
+                result = true;
+                break;
+            }
+        }
+        return result;
+    }
+
+
    }
